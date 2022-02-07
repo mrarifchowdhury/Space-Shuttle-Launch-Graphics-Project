@@ -1,0 +1,37 @@
+void joint()
+{
+glBegin(GL_QUADS);              // joint
+      glColor3ub(255,255,255);
+      glVertex2f( -0.54f, 0.16f);
+      glVertex2f(-0.38f,0.16f);  
+      glVertex2f(-0.38f,0.18f);
+      glVertex2f( -0.54f, 0.18f);
+
+  glEnd();
+
+
+
+
+glBegin(GL_QUADS);              //joint
+      glColor3ub(255,255,255);
+      glVertex2f( -0.54f, 0.15f);
+      glVertex2f(-0.45f,0.15f);  
+      glVertex2f(-0.45f,0.19f);
+      glVertex2f( -0.54f, 0.19f);
+
+  glEnd();
+}
+
+
+///////////////-----------------------------------------Start push and pop matrix in joint holder-----------------------------------------
+
+
+glPushMatrix();
+
+        glTranslatef(-0.22,-0.30,0);
+        glScalef(.80,1.10,0.0);
+        joint();
+        glPopMatrix();
+
+
+///////////////-----------------------------------------Finish push and pop matrix in joint holder-----------------------------------------

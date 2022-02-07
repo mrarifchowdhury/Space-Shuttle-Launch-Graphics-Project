@@ -1,0 +1,104 @@
+
+// for bus
+static GLfloat ml = 1.0;
+static GLfloat rl = 0.27;
+static GLfloat ml1 = 1.0;
+static GLfloat gate = 0.27;
+
+
+/////////////////-----------------------------------------Start push and pop matrix in busfull -----------------------------------------
+//
+//        glPushMatrix();
+//        glTranslatef(rl,-0.001,0);
+//        glScalef(.90,1.10,0.0);
+//        busfull();
+//        glPopMatrix();
+//
+/////////////////-----------------------------------------Finish push and pop matrix in busfull -----------------------------------------
+//
+//
+/////////////////-----------------------------------------Start push and pop matrix in man-1 -----------------------------------------
+//
+//        glPushMatrix();
+//        glTranslatef(ml,-0.65,0);
+//        glScalef(.10,.20,0.0);
+//        man();
+//        glPopMatrix();
+//
+/////////////////-----------------------------------------Finish push and pop matrix in man-1 -----------------------------------------
+//
+/////////////////-----------------------------------------Start push and pop matrix in man-2 -----------------------------------------
+//
+//        glPushMatrix();
+//        glTranslatef(ml1,-0.65,0);
+//        glScalef(.10,.20,0.0);
+//        man();
+//        glPopMatrix();
+//
+/////////////////-----------------------------------------Finish push and pop matrix in man-2 -----------------------------------------
+
+
+
+
+
+void spinDisplay()
+{
+
+
+        // for bus
+
+     rl = rl - 0.0002;
+
+
+	if (rl <= -0.12)
+		{
+
+                rl = -0.12;
+
+                ml = ml - 0.0002;
+                ml1 = ml1 - 0.0002;
+
+	if (ml = 0.42)
+		{
+
+
+
+
+
+
+		}
+
+ 
+		
+
+    if (ml1 = 0.37)
+		{
+
+
+                ml1 = 0.37;
+
+		}
+
+
+		}
+
+
+
+
+
+
+
+	glutPostRedisplay();
+}
+
+
+
+
+
+
+
+
+
+
+
+glutMouseFunc(mouse);

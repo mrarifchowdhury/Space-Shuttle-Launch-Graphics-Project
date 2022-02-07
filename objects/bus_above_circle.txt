@@ -1,0 +1,42 @@
+
+GLint i;
+GLfloat cx=0,str=500.0,mn=500.0;
+GLfloat sr=0.0,sg=0.749,sb=1.0;
+
+void circle(GLdouble rad)
+{
+    GLint points = 50;
+    GLdouble delTheta = (2.0 * PI) / (GLdouble)points;
+    GLdouble theta = 0.0;
+
+    glBegin(GL_POLYGON);
+    {
+        for( i = 0; i <=50; i++, theta += delTheta )
+        {
+            glVertex2f(rad * cos(theta),rad * sin(theta));
+        }
+    }
+    glEnd();
+}
+
+
+
+
+
+
+
+
+
+
+
+///////////////-----------------------------------------Start push and pop matrix in circle -----------------------------------------
+
+        glPushMatrix();
+        glTranslatef(0.64,-0.40,0);
+        glScalef(0.80,0.25,0.0);
+        circle(.22);
+        glPopMatrix();
+
+///////////////-----------------------------------------Finish push and pop matrix in circle -----------------------------------------
+
+

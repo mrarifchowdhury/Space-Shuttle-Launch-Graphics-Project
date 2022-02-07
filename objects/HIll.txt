@@ -1,0 +1,29 @@
+  glBegin(GL_QUADS);              // hill
+      glColor3ub(6,255,64); // green
+
+      glVertex2f( -1.0f,  -0.70f);
+      glVertex2f( -0.50f, -0.70f);
+      glVertex2f( -0.75f, -0.0f);
+      glVertex2f( -1.0f,  -0.30f);
+
+   glEnd();
+
+   glBegin(GL_TRIANGLES);              // hill
+      glColor3ub(6,255,64); // green
+
+      glVertex2f( -0.75f,  -0.70f);
+      glVertex2f( -0.25f, -0.70f);
+      glVertex2f( -0.50f, -0.0f);
+
+
+   glEnd();
+
+glBegin(GL_TRIANGLES);              // hill
+      glColor3ub(6,255,64); // green
+
+      glVertex2f( -0.75f,  -0.70f);
+      glVertex2f( -0.0f, -0.70f);
+      glVertex2f( -0.25f, -0.0f);
+
+
+   glEnd();
